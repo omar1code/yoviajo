@@ -1,0 +1,49 @@
+/*Colors*/
+:root {
+  --color-background: #fbfbfa;
+  --color-mark: #1e99ac;
+  --color-submark: #e5e5e5;
+  --color-textheader: #191919;
+  --color-textparagrap: #7b7b7b;
+}
+@media (max-width: 800px) {
+  .menu-btn{
+    display: block;
+  }
+  .menu-btn:hover{
+    opacity: 0.5;
+  }
+  .nav-main .nav-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-textparagrap) ;
+    height: 100%;
+    padding: 30px;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav-main .nav-menu.show{
+    transform: translateX(0px);
+  }
+  .nav-main .nav-menu li a {
+    color: var(--color-submark);
+  }
+  /*we are*/
+
+  .we-are{
+    flex-direction: column;
+    height: auto;
+  }
+  .we-are .left, 
+  .we-are .right{
+    width: 100%;
+  }
+  .we-are .left img{
+    width: 100%;
+    height: auto;
+  }
+
+}
